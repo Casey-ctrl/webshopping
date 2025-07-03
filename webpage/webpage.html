@@ -12,6 +12,7 @@
         <style>
 body{
     height:100vh;
+    background:url()    
  
 }
 h1{
@@ -21,8 +22,17 @@ h1{
     font-family:Arial, Helvetica, sans-serif;
     font-weight:bold;
     text-transform: capitalize;
+    color:rgba(15, 135, 15, 0.429);
+    transform: translateY(-50px);
+    animation: slidein 1s ease-out forwards;
 }
+@keyframes slidein{
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
 
+}
  a{
     color:black;
     border:2px solid;
@@ -32,17 +42,27 @@ h1{
     font-size: 20px;
     font-style:italic;
     color: lightblue;
+    
  }
 
  a:hover{
     color:purple;
  }
-
+ .outline{
+    font-size:30px;
+    font-weight: bold;
+    text-align:center;
+ }
+ img{
+    width:1200px;
+    border-radius: 6px;
+ }
         </style>
 
     </head>
 
     <body>
+       <img src="Shopping.jpg" alt="background">
         
         <header>
         <h1>Trixia</h1>
@@ -51,12 +71,17 @@ h1{
         <a href="">About us</a>
         <a href="">Products</a>
         <a href="">Contact us</a>
-            </div>
+      </div>
         </header>
         
         <main>
-
-
+            <h3 class="outline">
+            What is Trixia 
+            </h3>
+        <p>Trixia is an Online co-operation store which can be used for online and other app purchases,
+                global reach, increased convinience, diverse product offerings, cost-effectiveness, market expansion,
+                and technoligical advancements, we operate on various business models, and provide cost-effectiveness
+                to enhance customer based experiences.</p>
 
 
         </main>
@@ -64,5 +89,6 @@ h1{
 
 
         </footer>
+        <script src="project.js"></script>
     </body>
 </html>
