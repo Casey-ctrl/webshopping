@@ -5,38 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Counter Program</title>
     <style>
+        #countLabel{
+            font-size: 3.5em;
+            text-align:center;
+            display: block;
+            font-family: Helvetica;
 
-body{
-    display:block;
-    
+        }
+        #Btn-container{
+            text-align: center;
 
-}
+        }
+        .buttons{
+            padding: 10px 25px;
+            cursor: pointer;
+            color: white;
+            background-color: rgba(14, 66, 5, 0.726);
+            border-radius: 15px;
+        }
 
-#countLabel{
-   font-size:7em;
- text-align: center;
- font-family: Arial, Helvetica, sans-serif;
- display: block;
-
-}
-.buttons{
-    font-size:1em;
-    text-align:center;
-   padding:10px 20px;
-   justify-content: center;
-   display: inline;
-   color: white;
-   background-color:hsla(240, 100%, 50%, 0.639);
-}
 
     </style>
-</head>
-<body>
-    <label id="countLabel">0</label>
-    <button id="DecreaseBtn" class="buttons">Decrease</button>
-    <button id="resetBtn" class="buttons">Reset</button>
-    <button id="IncreaseBtn" class="buttons">Increase</button>
+<h1>Stopwatch</h1>
+<div id="container">
 
-    <script src=></script>
+    <label id="countLabel">0</label><br>
+    <div id="Btn-container">
+    <button id="stopBtn" class="buttons">Stop</button>
+    <button id="resetBtn" class="buttons">Reset</button>
+    <button id="startBtn" class="buttons">Start</button>
+    </div>
+
+    </div>
+
+    <script src="counter.js"></script>
 </body>
 </html>
