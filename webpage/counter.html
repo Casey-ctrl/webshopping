@@ -3,41 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Counter Program</title>
+    <title>Document</title>
     <style>
-        #countLabel{
-            font-size: 3.5em;
-            text-align:center;
-            display: block;
-            font-family: Helvetica;
-
+        body{
+            background-color: rgba(0, 0, 0, 0.263);
         }
-        #Btn-container{
+        h1{
             text-align: center;
+            font-size: 3em;
+            font-weight: bold;
+            font-style: italic;
+            color: white;
 
         }
-        .buttons{
-            padding: 10px 25px;
-            cursor: pointer;
-            color: white;
-            background-color: rgba(14, 66, 5, 0.726);
-            border-radius: 15px;
+        #container-div{
+            font-weight: bold;
+            text-decoration: none;
+        }
+        #submitBtn{
+            margin-top: 22px;
+            text-align: center;
+            font-size: 2em;
+            border-radius: 22px;
+            border-style: inset;
         }
 
 
     </style>
-<h1>Stopwatch</h1>
-<div id="container">
-
-    <label id="countLabel">0</label><br>
-    <div id="Btn-container">
-    <button id="stopBtn" class="buttons">Stop</button>
-    <button id="resetBtn" class="buttons">Reset</button>
-    <button id="startBtn" class="buttons">Start</button>
-    </div>
-
-    </div>
-
-    <script src="counter.js"></script>
+</head>
+<body>
+    <h1>CheckBox</h1>
+    <div id="container-div">
+  <input type="checkbox" id="myCheckbox">
+    <label for="myCheckbox">SubScribe</label><br><br>
+    <input type="radio"  id="visaBtn" name="card">
+    <label for="visaBtn">Visa</label><br><br>
+    <input type="radio"  id="masterBtn" name="card">
+    <label for="masterBtn">MasterCard</label><br><br>
+    <input type="radio" id="paypalBtn" name="card">
+    <label for="paypalBtn">PayPal</label>
+  </div>
+  <button type="submit" id="submitBtn">Submit</button>
+  <p id="subResult"></p>
+  <p id="paymentResult"></p>
+  <script src="counter.js"></script>
 </body>
 </html>

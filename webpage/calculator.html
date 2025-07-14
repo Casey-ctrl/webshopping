@@ -1,59 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
-    <style>
-        body{
-            display: flex;
-            justify-content: center;
-            align-items:center;
-            height:100vh;
-            background-color: rgba(0, 0, 0, 0.769);
-            margin:0;
-        }
-        #container-cal{
-            background:rgba(128, 128, 128, 0.171);
-            border-radius: 10px;
-            padding:20px;
-            box-shadow:0px 10px 20px;
-            width:300px
-        }
-        .buttons{
-            display:grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap:10px;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator Program</title>
+  <style>
+    body{
+      background-color: rgba(0, 0, 0, 0.849);
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+    }
+    #container-cal{
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 10px 20px;
+      width: 300px;
+    }
+    .buttons{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+
+    }
     #display{
-        width:100%;
-        height:50px;
-        font-size:24px;
-        margin-bottom:10px;
-        text-align: right;
-        padding: 10px;
-        border:none;
-        border-radius: 5px;
+      width: 100%;
+      height: 50px;
+      margin-bottom: 7px;
+      font-size: 19px;
     }
     button{
-        padding: 20px;
-        font-size: 19px;
-        border:none;
-        font-family:Helvetica;
-    
+      padding: 20px;
+      border: none;
+      border-radius: 15px;
     }
-    button:hover{
-        transition: 0.25s;
-        color:grey;
-    }
-
-
-    </style>
+   
+  </style>
 </head>
+
 <body>
     <div id="container-cal">
-    <input type="text" id="display" disabled>
-    <div class="buttons">
+      <input type="text" id="display" disabled>
+      <div class="buttons">
         <button onclick="cleardisplay()">C</button>
         <button onclick="appendvalue('7')">7</button>
         <button onclick="appendvalue('8')">8</button>
@@ -72,9 +62,13 @@
         <button onclick="calculate('=')">=</button>
         <button onclick="appendvalue('+')">+</button>
 
+    
+
+
+      </div>
+
 
     </div>
-
-    </div>
+    <script src="counter.js"></script>
 </body>
 </html>
